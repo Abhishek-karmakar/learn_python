@@ -2,33 +2,14 @@ import random
 import sys
 import os
 
-grocery_list = ['Juice', 'Tomatoes', 'Potatoes', 'Bananas']
-print(grocery_list)
-print ('First Item', grocery_list[0])
-grocery_list[0] = "Butter"
-print('First Item')
-# print a range of grocery list
-print(grocery_list[1:3])
+#touples - unlike list we will not be able to change a touple
+'''when you need to change a touple you can convert it into a list 
+and make the modification and then convrt it back to touple 
+to ensure it does not get changed'''
 
-other_events = ["wash_car", 'pick up kids', 'cash_check']
-#create a list and add above two list inside another list
-to_do_list = [other_events,grocery_list]
+pi_touple = (3,1,4,5,6,)
 
-print((to_do_list[1][1]))
+new_tuple = list(pi_tuple)
+new_list = tuple(new_tuple)
 
-print(to_do_list)
-
-grocery_list.insert(1, "pickle")
-grocery_list.remove("pickle")
-grocery_list.sort()
-grocery_list.reverse()
-
-del grocery_list[3] #delete the 5th element
-print(to_do_list)
-
-to_do_list2 = other_events + grocery_list
-
-print(len(to_do_list2))
-print(max(to_do_list2))
-print(min(to_do_list2))
-
+len(tuple) min(tuple) max(tuple)
