@@ -2,32 +2,23 @@ import random
 import sys
 import os
 
-#conditionals if else elif == != > >= <=
-# logic gates are like (and or not) 
+# looping 
 
-age = 21
+for x in range(0,10):
+	print(x, '', end='')
 
-if age > 16:
-	print("You are old enought to drive")
-else:
-	print("Not old enough to drive")
+print('\n')
 
-if age >= 21:
-	print('You are old enough to drive a tractor trailer')
-elif age >=16:
-	print("You are old enoug to drive a car")
-else:
-	print("You are not old enough to drive")
+grocerry_list = ['Juice', 'Tomatoes', 'Potatoes', 'Bananas']
 
-if((age >= 1) and (age <=18)):
-	print("You get a birthday")
-elif(age == 21) or (age >= 65):
-	print("You get a birthday")
-elif not(age == 30):
-	print("You do not get your birthday")
-else:
-	print("You get a birthday party .. yeah")
+for y in grocerry_list:
+	print(y)
 
+for x in [2,4,6,8,10]:
+	print (x)
 
+num_list = [[1,2,3],[10,20,30],[100,200,300]]
 
-
+for x in range(0,3):
+	for y in range(0,3):
+		print(num_list[x][y])
