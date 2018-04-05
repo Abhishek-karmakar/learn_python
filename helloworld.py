@@ -2,51 +2,33 @@ import random
 import sys
 import os
 
-print("Hello World")
+grocery_list = ['Juice', 'Tomatoes', 'Potatoes', 'Bananas']
+print(grocery_list)
+print ('First Item', grocery_list[0])
+grocery_list[0] = "Butter"
+print('First Item')
+# print a range of grocery list
+print(grocery_list[1:3])
 
-#commen
+other_events = ["wash_car", 'pick up kids', 'cash_check']
+#create a list and add above two list inside another list
+to_do_list = [other_events,grocery_list]
 
-'''
-multiline comment
-comes here
+print((to_do_list[1][1]))
 
-Numbers Strings List Tuples 
-+-* / % 
-'''
-name = "Derek"
-print (name)
+print(to_do_list)
 
-#checking what all the numerals do. 
+grocery_list.insert(1, "pickle")
+grocery_list.remove("pickle")
+grocery_list.sort()
+grocery_list.reverse()
 
-print("5+2 = ",5+2 )
-print("5-2 = ",5-2 )
-print("5*2 = ",5*2 )
-print("5%2 = ",5%2 )
-print("5**2 = ",5**2 )
-print("5//2 = ",5//2 )
+del grocery_list[3] #delete the 5th element
+print(to_do_list)
 
+to_do_list2 = other_events + grocery_list
 
-#order of operation matters. 
-print("1 + 2 - 3 * 2 =",)
-
-
-#quote
-quote = "\" life is a lie, enjoy the pie \""
-
-multiline_quote = ''' Multiline is next line
-This is the next line'''
-
-new_string = quote + multiline_quote
-print(new_string)
-
-# 2 different type of srring
-print("%s %s %s" % ('I like the quote', quote, multiline_quote))
-
-# to print 5 new lines
-print('\n' * 5)
-
-'''
-print("I don't like", end="")
-print("newlines")
-'''
+print(len(to_do_list2))
+print(max(to_do_list2))
+print(min(to_do_list2))
 
