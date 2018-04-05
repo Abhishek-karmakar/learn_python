@@ -2,14 +2,25 @@ import random
 import sys
 import os
 
-#touples - unlike list we will not be able to change a touple
-'''when you need to change a touple you can convert it into a list 
-and make the modification and then convrt it back to touple 
-to ensure it does not get changed'''
+#Dictiontionaries and maps
+''' cannot join Disctionaries like we can join a list. '''
 
-pi_touple = (3,1,4,5,6,)
+hp_chars = {'Harry':'Potter',
+				'Ron':'Wisely',
+				'Hermoine':'Granger',
+				'Albus':'Dumbledore'}
 
-new_tuple = list(pi_tuple)
-new_list = tuple(new_tuple)
+print(hp_chars['Harry'])
+del hp_chars['Albus']
+hp_chars['Albus'] = 'Percivic'
 
-len(tuple) min(tuple) max(tuple)
+print (len(hp_chars))
+
+print (hp_chars.get("Harry"))
+
+print(hp_chars.keys())
+
+print(hp_chars.values())
+	
+
+
